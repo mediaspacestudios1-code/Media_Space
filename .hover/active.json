@@ -1,0 +1,6 @@
+{
+  "id": "local",
+  "name": "Local",
+  "url": "http://localhost:5173",
+  "accountEnvVars": []
+}

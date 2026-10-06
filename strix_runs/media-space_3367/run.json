@@ -1,0 +1,178 @@
+{
+  "run_id": "media-space_3367",
+  "run_name": "media-space_3367",
+  "start_time": "2026-10-03T03:08:14.629008+00:00",
+  "end_time": null,
+  "status": "running",
+  "auth_mode": "api_key",
+  "targets_info": [
+    {
+      "type": "local_code",
+      "details": {
+        "target_path": "/mnt/d/Media Space",
+        "workspace_subdir": "Media-Space"
+      },
+      "original": "/mnt/d/Media Space"
+    }
+  ],
+  "llm_usage": {
+    "requests": 4,
+    "input_tokens": 38336,
+    "input_tokens_details": [
+      {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      }
+    ],
+    "output_tokens": 3715,
+    "output_tokens_details": [
+      {
+        "reasoning_tokens": 4766
+      }
+    ],
+    "total_tokens": 42051,
+    "request_usage_entries": [
+      {
+        "input_tokens": 32186,
+        "output_tokens": 0,
+        "total_tokens": 32186,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1417
+        }
+      },
+      {
+        "input_tokens": 2050,
+        "output_tokens": 1850,
+        "total_tokens": 3900,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1683
+        }
+      },
+      {
+        "input_tokens": 2050,
+        "output_tokens": 1379,
+        "total_tokens": 3429,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1249
+        }
+      },
+      {
+        "input_tokens": 2050,
+        "output_tokens": 486,
+        "total_tokens": 2536,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 417
+        }
+      }
+    ],
+    "cost": 0.0,
+    "agents": [
+      {
+        "requests": 4,
+        "input_tokens": 38336,
+        "input_tokens_details": [
+          {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          }
+        ],
+        "output_tokens": 3715,
+        "output_tokens_details": [
+          {
+            "reasoning_tokens": 4766
+          }
+        ],
+        "total_tokens": 42051,
+        "request_usage_entries": [
+          {
+            "input_tokens": 32186,
+            "output_tokens": 0,
+            "total_tokens": 32186,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 1417
+            }
+          },
+          {
+            "input_tokens": 2050,
+            "output_tokens": 1850,
+            "total_tokens": 3900,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 1683
+            }
+          },
+          {
+            "input_tokens": 2050,
+            "output_tokens": 1379,
+            "total_tokens": 3429,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 1249
+            }
+          },
+          {
+            "input_tokens": 2050,
+            "output_tokens": 486,
+            "total_tokens": 2536,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 417
+            }
+          }
+        ],
+        "agent_id": "2d40201e",
+        "agent_name": "Root Agent",
+        "model": "ollama/qwen3-vl",
+        "cost": 0.0
+      }
+    ]
+  },
+  "scan_mode": "quick",
+  "instruction": "",
+  "user_instruction": null,
+  "non_interactive": false,
+  "local_sources": [
+    {
+      "source_path": "/mnt/d/Media Space",
+      "workspace_subdir": "Media-Space",
+      "protect_metadata": true
+    }
+  ],
+  "workspace_files": [],
+  "workspace_mount": null,
+  "diff_scope": {
+    "active": false,
+    "mode": "auto"
+  },
+  "scope_mode": "auto",
+  "diff_base": null
+}

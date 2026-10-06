@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#19121e">
+  <meta name="description" content="Explore the complete Media Space photoshoot collection.">
+  <title>Photo Gallery | Media Space</title>
+  <link rel="icon" type="image/jpeg" href="/Final%20Logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=photoshoots-complete">
+</head>
+<body class="photoshoots-page">
+  <header class="header">
+    <a class="brand" href="/"><img src="/Final%20Logo.jpeg" alt="Media Space logo"><span>MEDIA SPACE</span></a>
+    <a class="button button-small" href="/#work">&larr; BACK TO MOMENTS</a>
+  </header>
+  <main class="photoshoot-main">
+    <a class="photo-back" href="/#work">&larr; Made of moments</a>
+    <p class="eyebrow">MEDIA SPACE <span aria-hidden="true">&#183;</span> THE PHOTO COLLECTION</p>
+    <div class="photo-heading-row">
+      <div><h1>Photo<em>Stories.</em></h1><p class="photo-intro">A collection of moments, details and memories captured by Media Space.</p></div>
+      <p class="photo-count"><strong>13</strong><span>PHOTOGRAPHS</span></p>
+    </div>
+    <section class="photoshoot-grid" aria-label="Photo gallery">
+      <button class="photo-tile" type="button" data-index="0" aria-label="Open photograph 1"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.50.58%20PM.jpeg" alt="Photoshoot photograph 1" loading="lazy"><span>01 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="1" aria-label="Open photograph 2"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.50.58%20PM%20(1).jpeg" alt="Photoshoot photograph 2" loading="lazy"><span>02 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="2" aria-label="Open photograph 3"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.50.58%20PM%20(2).jpeg" alt="Photoshoot photograph 3" loading="lazy"><span>03 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="3" aria-label="Open photograph 4"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.50.59%20PM.jpeg" alt="Photoshoot photograph 4" loading="lazy"><span>04 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="4" aria-label="Open photograph 5"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.50.59%20PM%20(1).jpeg" alt="Photoshoot photograph 5" loading="lazy"><span>05 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="5" aria-label="Open photograph 6"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.50.59%20PM%20(2).jpeg" alt="Photoshoot photograph 6" loading="lazy"><span>06 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="6" aria-label="Open photograph 7"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.00%20PM.jpeg" alt="Photoshoot photograph 7" loading="lazy"><span>07 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="7" aria-label="Open photograph 8"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.00%20PM%20(1).jpeg" alt="Photoshoot photograph 8" loading="lazy"><span>08 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="8" aria-label="Open photograph 9"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.00%20PM%20(2).jpeg" alt="Photoshoot photograph 9" loading="lazy"><span>09 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="9" aria-label="Open photograph 10"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.00%20PM%20(3).jpeg" alt="Photoshoot photograph 10" loading="lazy"><span>10 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="10" aria-label="Open photograph 11"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.01%20PM.jpeg" alt="Photoshoot photograph 11" loading="lazy"><span>11 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="11" aria-label="Open photograph 12"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.01%20PM%20(1).jpeg" alt="Photoshoot photograph 12" loading="lazy"><span>12 <i>VIEW</i></span></button>
+      <button class="photo-tile" type="button" data-index="12" aria-label="Open photograph 13"><img src="./PhotoShoots/WhatsApp%20Image%202026-10-01%20at%2012.51.01%20PM%20(2).jpeg" alt="Photoshoot photograph 13" loading="lazy"><span>13 <i>VIEW</i></span></button>
+    </section>
+  </main>
+  <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <figure><img src="" alt=""><figcaption></figcaption></figure>
+    <button class="lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+  </div>
+  <footer class="photoshoot-footer">&copy; <span id="year"></span> MEDIA SPACE <span aria-hidden="true">&#183;</span> POLLACHI, INDIA</footer>
+  <script>
+    document.querySelector('#year').textContent = new Date().getFullYear();
+    const grid = document.querySelector('.photoshoot-grid');
+    const count = document.querySelector('.photo-count');
+    let tiles = [...document.querySelectorAll('.photo-tile')];
+    const viewer = document.querySelector('#photoLightbox');
+    const viewImage = viewer.querySelector('figure img');
+    const caption = viewer.querySelector('figcaption');
+    let current = 0;
+    let lastFocused = null;
+    function layoutPhotos() {
+      const styles = getComputedStyle(grid);
+      const rowHeight = parseFloat(styles.gridAutoRows) || 8;
+      const gap = parseFloat(styles.rowGap) || 16;
+      tiles.forEach(tile => {
+        const image = tile.querySelector('img');
+        if (!image.naturalWidth || !image.naturalHeight) return;
+        const imageWidth = image.clientWidth || tile.clientWidth - 18;
+        const tileHeight = imageWidth * image.naturalHeight / image.naturalWidth + 18;
+        tile.style.gridRowEnd = `span ${Math.ceil((tileHeight + gap) / (rowHeight + gap))}`;
+      });
+    }
+    function showPhoto(index) {
+      current = (index + tiles.length) % tiles.length;
+      const image = tiles[current].querySelector('img');
+      viewImage.src = image.src;
+      viewImage.alt = image.alt;
+      caption.textContent = `PHOTOGRAPH ${String(current + 1).padStart(2, '0')} / ${String(tiles.length).padStart(2, '0')}`;
+    }
+    function openViewer(index) {
+      lastFocused = document.activeElement;
+      showPhoto(index);
+      viewer.hidden = false;
+      viewer.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('viewer-open');
+      viewer.querySelector('.lightbox-close').focus();
+    }
+    function closeViewer() {
+      viewer.hidden = true;
+      viewer.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('viewer-open');
+      lastFocused?.focus();
+    }
+    function bindTiles() {
+      tiles = [...grid.querySelectorAll('.photo-tile')];
+      count.innerHTML = `<strong>${tiles.length}</strong><span>PHOTOGRAPHS</span>`;
+      tiles.forEach((tile, index) => tile.addEventListener('click', () => openViewer(index)));
+      tiles.forEach(tile => tile.querySelector('img').addEventListener('load', layoutPhotos, { once: true }));
+      requestAnimationFrame(layoutPhotos);
+    }
+    bindTiles();
+    fetch('/api/photoshoots').then(response => {
+      if (!response.ok) throw new Error('Unable to load photos.');
+      return response.json();
+    }).then(({ images }) => {
+      if (!Array.isArray(images)) return;
+      grid.innerHTML = images.map((image, index) => `<button class="photo-tile" type="button" aria-label="Open photograph ${index + 1}"><img src="${image.url}" alt="Photoshoot photograph ${index + 1}" loading="lazy"><span>${String(index + 1).padStart(2, '0')} <i>VIEW</i></span></button>`).join('');
+      bindTiles();
+    }).catch(() => {});
+    window.addEventListener('resize', layoutPhotos);
+    viewer.querySelector('.lightbox-close').addEventListener('click', closeViewer);
+    viewer.querySelector('.lightbox-prev').addEventListener('click', () => showPhoto(current - 1));
+    viewer.querySelector('.lightbox-next').addEventListener('click', () => showPhoto(current + 1));
+    viewer.addEventListener('click', event => { if (event.target === viewer) closeViewer(); });
+    document.addEventListener('keydown', event => {
+      if (viewer.hidden) return;
+      if (event.key === 'Escape') closeViewer();
+      if (event.key === 'ArrowLeft') showPhoto(current - 1);
+      if (event.key === 'ArrowRight') showPhoto(current + 1);
+    });
+  </script>
+</body>
+</html>
+

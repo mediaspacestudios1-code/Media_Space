@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#19121e">
+  <title>404 — Page Not Found | Media Space</title>
+  <link rel="icon" type="image/jpeg" href="/image/Final%20Logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #19121e;
+      --surface: #241c28;
+      --text: #f5f2f7;
+      --muted: #b8afc2;
+      --gold: #d6b778;
+      --line: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .container {
+      max-width: 560px;
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 48px 32px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      object-fit: cover;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 6vw, 42px);
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .offline-notice {
+      display: none;
+      background: rgba(214, 183, 120, 0.1);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--gold);
+      color: #120d15;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 14px 28px;
+      border-radius: 3px;
+      text-decoration: none;
+      border: 1px solid var(--gold);
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+    .button-outline {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--line);
+    }
+    .button-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    footer {
+      margin-top: 32px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <img src="/image/Final%20Logo.jpeg" alt="Media Space" class="logo">
+    <span class="badge" id="status-badge">PAGE NOT FOUND</span>
+    <h1 id="status-title">Lost in <em>space?</em></h1>
+    <p id="status-desc">The page you are looking for does not exist or has been moved. If you are offline, check your internet connection and try again.</p>
+    
+    <div id="offline-notice" class="offline-notice">
+      📡 You are currently offline. Pages will load when internet connection is restored.
+    </div>
+
+    <div class="actions">
+      <a href="/" class="button">Return to Home <span>↗</span></a>
+      <button type="button" class="button button-outline" onclick="location.reload()">Retry Connection ↻</button>
+    </div>
+  </main>
+
+  <footer>
+    MEDIA SPACE · POLLACHI &amp; BEYOND
+  </footer>
+
+  <script>
+    function updateOnlineStatus() {
+      const isOnline = navigator.onLine;
+      const notice = document.getElementById('offline-notice');
+      const badge = document.getElementById('status-badge');
+      const title = document.getElementById('status-title');
+      const desc = document.getElementById('status-desc');
+
+      if (!isOnline) {
+        notice.style.display = 'block';
+        badge.textContent = 'NETWORK UNAVAILABLE';
+        title.innerHTML = 'You are <em>offline.</em>';
+        desc.textContent = 'It seems your network connection was lost. Please check your Wi-Fi or mobile data connection.';
+      }
+    }
+
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    updateOnlineStatus();
+  </script>
+</body>
+</html>

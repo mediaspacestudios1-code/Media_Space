@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-03 03:39:47 UTC",
+  "run_id": "media-space_3367",
+  "run_name": "media-space_3367",
+  "scope": {
+    "targets": [
+      {
+        "type": "local_code",
+        "details": {
+          "target_path": "/mnt/d/Media Space",
+          "workspace_subdir": "Media-Space"
+        },
+        "original": "/mnt/d/Media Space"
+      }
+    ],
+    "scan_mode": "quick",
+    "scope_mode": "auto",
+    "diff_scope": {
+      "active": false,
+      "mode": "auto"
+    },
+    "instruction": ""
+  },
+  "summary": {
+    "surfaces_reviewed": 0,
+    "outcomes": {},
+    "findings_filed": 0,
+    "gaps": 1
+  },
+  "machine_observed": {
+    "agents": [
+      {
+        "agent_id": "2d40201e",
+        "agent_name": "Root Agent",
+        "status": "stopped",
+        "skills": [],
+        "task": "\n\nLocal Codebases: - /mnt/d/Media Space (available at: /workspace/Media-Space; this is the user's real directory, mounted live and writable — .git/.agents/.codex are read-only)",
+        "is_root": true
+      }
+    ],
+    "skills_exercised": [],
+    "findings_filed": 0,
+    "source": "runtime"
+  },
+  "completeness": {
+    "complete": false,
+    "scan_status": "running",
+    "exit_reason": null,
+    "caveats": [
+      "The scan ended with status 'running' rather than completing, so coverage reflects only the work finished before it stopped.",
+      "1 agent(s) did not finish cleanly (Root Agent); any surface they held is under-covered."
+    ]
+  },
+  "entries": [],
+  "gaps": [
+    {
+      "kind": "agent_recorded_no_coverage",
+      "agent_name": "Root Agent",
+      "detail": "Root Agent ran (status: stopped) without recording any coverage. Whatever it examined is absent from this record."
+    }
+  ]
+}
