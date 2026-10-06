@@ -6,19 +6,19 @@
   <meta name="theme-color" content="#19121e">
   <meta name="description" content="Explore the complete Media Space photoshoot collection.">
   <title>Photo Gallery | Media Space</title>
-  <link rel="icon" type="image/jpeg" href="/Final%20Logo.jpeg">
+  <link rel="icon" type="image/jpeg" href="./image/Final%20Logo.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=photoshoots-complete">
+  <link rel="stylesheet" href="./styles.css?v=photoshoots-complete">
 </head>
 <body class="photoshoots-page">
   <header class="header">
-    <a class="brand" href="/"><img src="/Final%20Logo.jpeg" alt="Media Space logo"><span>MEDIA SPACE</span></a>
-    <a class="button button-small" href="/#work">&larr; BACK TO MOMENTS</a>
+    <a class="brand" href="./"><img src="./image/Final%20Logo.jpeg" alt="Media Space logo"><span>MEDIA SPACE</span></a>
+    <a class="button button-small" href="./#work">&larr; BACK TO MOMENTS</a>
   </header>
   <main class="photoshoot-main">
-    <a class="photo-back" href="/#work">&larr; Made of moments</a>
+    <a class="photo-back" href="./#work">&larr; Made of moments</a>
     <p class="eyebrow">MEDIA SPACE <span aria-hidden="true">&#183;</span> THE PHOTO COLLECTION</p>
     <div class="photo-heading-row">
       <div><h1>Photo<em>Stories.</em></h1><p class="photo-intro">A collection of moments, details and memories captured by Media Space.</p></div>
@@ -98,14 +98,6 @@
       requestAnimationFrame(layoutPhotos);
     }
     bindTiles();
-    fetch('/api/photoshoots').then(response => {
-      if (!response.ok) throw new Error('Unable to load photos.');
-      return response.json();
-    }).then(({ images }) => {
-      if (!Array.isArray(images)) return;
-      grid.innerHTML = images.map((image, index) => `<button class="photo-tile" type="button" aria-label="Open photograph ${index + 1}"><img src="${image.url}" alt="Photoshoot photograph ${index + 1}" loading="lazy"><span>${String(index + 1).padStart(2, '0')} <i>VIEW</i></span></button>`).join('');
-      bindTiles();
-    }).catch(() => {});
     window.addEventListener('resize', layoutPhotos);
     viewer.querySelector('.lightbox-close').addEventListener('click', closeViewer);
     viewer.querySelector('.lightbox-prev').addEventListener('click', () => showPhoto(current - 1));
@@ -120,4 +112,3 @@
   </script>
 </body>
 </html>
-

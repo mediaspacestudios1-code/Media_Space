@@ -1,11 +1,11 @@
-const CACHE_NAME = 'media-space-v1';
+const CACHE_NAME = 'media-space-v2';
 const OFFLINE_ASSETS = [
-  '/',
-  '/index.html',
-  '/404.html',
-  '/styles.css',
-  '/app.js',
-  '/image/Final%20Logo.jpeg'
+  './',
+  './index.html',
+  './404.html',
+  './styles.css',
+  './app.js',
+  './image/Final%20Logo.jpeg'
 ];
 
 self.addEventListener('install', event => {
